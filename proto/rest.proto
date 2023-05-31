@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package bandits;
+option go_package = "protogen/rest";
+
+
+message Request {
+    string uuid = 1;
+}
