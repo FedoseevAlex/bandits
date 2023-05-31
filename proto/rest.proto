@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package rest;
+
+message Request {
+    string uuid = 1;
+}
