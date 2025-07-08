@@ -47,6 +47,7 @@ type Action struct {
 type ContextualData struct {
 	Rounds  int
 	Rewards map[ActionID]float64
+	Chosen  map[ActionID]int
 }
 
 type Data map[MABContext]ContextualData
