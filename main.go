@@ -35,7 +35,7 @@ func main() {
 	http.Handle("/show", http.HandlerFunc(ShowHandler))
 	http.Handle("/click", http.HandlerFunc(ClickHandler))
 
-	strategy = ucb.NewUCB1Strategy(1)
+	strategy = ucb.NewUCBStrategy(1)
 
 	log.Println("Starting server on port 8080")
 	http.ListenAndServe("localhost:8080", nil)
