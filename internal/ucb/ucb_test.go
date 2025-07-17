@@ -185,7 +185,6 @@ func TestUCBConvergence(t *testing.T) {
 	if selections["best"] < selections["medium"] || selections["medium"] < selections["worst"] {
 		t.Errorf("Best arm should be selected most frequently. Selections: %v", selections)
 	}
-	t.Logf("Selections: %v", selections)
 }
 
 func BenchmarkUCB(b *testing.B) {
